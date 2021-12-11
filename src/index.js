@@ -1,26 +1,12 @@
-'use strict';
-import React from 'react';
-import ReactDOM from 'react-dom';
+import './style.css';
 
-const e = React.createElement;
+function component() {
+  const element = document.createElement('div');
 
-class App extends React.component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
+  element.innerHTML = "Hello World!";
+  element.classList.add('hello');
 
-  render() {
-    return e(
-      'div',
-      {},
-      'Hello World!'
-    );
-  }
+  return element;
 }
 
-const domContainer = document.querySelector('#root');
-ReactDOM.render(
-  e(App),
-  domContainer
-);
+document.body.appendChild(component());
