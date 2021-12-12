@@ -4,7 +4,8 @@ import Icon from './digimon.png';
 import Data from './data/data.xml';
 import Notes from './data/data.csv';
 // Warning: Should not import the named export 'data' (imported as 'data') from default-exporting module (only default export is available soon)
-import { data } from './data/data.json';
+// import { data } from './data/data.json';
+import data from './data/data.json';
 import Toml from './data/data.toml';
 import Yaml from './data/data.yaml';
 import Json5 from './data/data.json5';
