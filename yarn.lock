@@ -2336,7 +2336,7 @@
     "rechoir" "^0.7.0"
     "webpack-merge" "^5.7.3"
 
-"webpack-dev-middleware@^5.2.1":
+"webpack-dev-middleware@^5.2.1", "webpack-dev-middleware@^5.2.2":
   "integrity" "sha512-DjZyYrsHhkikAFNvSNKrpnziXukU1EChFAh9j4LAm6ndPLPW8cN0KhM7T+RAiOqsQ6ABfQ8hoKIs9IWMTjov+w=="
   "resolved" "https://registry.npmjs.org/webpack-dev-middleware/-/webpack-dev-middleware-5.2.2.tgz"
   "version" "5.2.2"
