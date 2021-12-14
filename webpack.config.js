@@ -3,21 +3,33 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   mode: 'development',
-  entry: {
-    index: './src/index.js',
-    print: './src/print.js',
-  },
+  entry: './src/index.js',
   devtool: 'inline-source-map',
   devServer: {
     static: './dist',
   },
+  module: {
+    rules: [
+      {
+        test: /\.js$/i,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env', '@babel/preset-react'],
+          },
+        }
+      },
+    ],
+  },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Development',
+      title: 'App From Scratch',
+      template: './public/index.template.html',
     }),
   ],
   output: {
-    filename: '[name].bundle.js',
+    filename: 'bundle.min.js',
     path: path.resolve(__dirname, 'dist'),
     clean: true,
     publicPath: '/',
