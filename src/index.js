@@ -1,13 +1,13 @@
 'use strict';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import LikeButton from './LikeButton';
+import App from './App';
 
 const domContainer = document.getElementById('root');
 
 if (domContainer) {
   ReactDOM.render(
-    <LikeButton />,
+    <App />,
     domContainer
   );
 }
