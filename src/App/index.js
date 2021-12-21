@@ -1,14 +1,25 @@
-import React, { useState } from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react';
+import Clock from './Clock';
+import Form from './Form';
+import LikeButton from './LikeButton';
+import Toggle from './Toggle';
 
-const App = () => {
-  const [sideMenu, setSideMenu] = useState('home');
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
 
-  return(
-    <h1>
-      Home
-    </h1>
-  );
+  render() {
+    return(
+      <div>
+        <Clock />
+        <Form />
+        <LikeButton />
+        <Toggle />
+      </div>
+    )
+  }
 }
 
 export default App;
