@@ -29,7 +29,7 @@ class Form extends React.Component {
 
   render() {
     return(
-      <form onClick={(e) => this.handleSubmit(e)}>
+      <form onSubmit={(e) => this.handleSubmit(e)}>
         <button type="submit">
           Submit
         </button>
