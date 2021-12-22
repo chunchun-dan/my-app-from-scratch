@@ -22,14 +22,14 @@ class Form extends React.Component {
     // this.handleSubmit = this.handleSubmit.bind(this);
   }
 
-  handleSubmit(e){
+  handleSubmit(e, id){
     e.preventDefault();
-    console.log('Button is clicked');
+    console.log('Button is clicked'+ id);
   };
 
   render() {
     return(
-      <form onSubmit={(e) => this.handleSubmit(e)}>
+      <form onSubmit={(e) => this.handleSubmit(e, '1')}>
         <button type="submit">
           Submit
         </button>

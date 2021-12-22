@@ -3,6 +3,7 @@ import Clock from './Clock';
 import Form from './Form';
 import LikeButton from './LikeButton';
 import Toggle from './Toggle';
+import LoginControl from './LoginControl';
 
 class App extends React.Component {
   constructor(props) {
@@ -17,6 +18,7 @@ class App extends React.Component {
         <Form />
         <LikeButton />
         <Toggle />
+        <LoginControl />
       </div>
     )
   }
