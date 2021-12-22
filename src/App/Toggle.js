@@ -1,5 +1,17 @@
 import React from 'react';
 
+function ShowText(props) {
+  if(!props.isToggleOn) {
+    return null
+  }
+
+  return(
+    <div>
+      Toggle is on
+    </div>
+  )
+}
+
 class Toggle extends React.Component {
   constructor(props) {
     super(props);
@@ -17,9 +29,12 @@ class Toggle extends React.Component {
 
   render() {
     return (
-      <button onClick={this.handleClick.bind(this)}>
-        {this.state.isToggleOn? 'ON' : 'OFF'}
-      </button>
+      <div>
+        <ShowText isToggleOn={this.state.isToggleOn}/>
+        <button onClick={this.handleClick.bind(this)}>
+          {this.state.isToggleOn? 'ON' : 'OFF'}
+        </button>
+      </div>
     )
   }
 }

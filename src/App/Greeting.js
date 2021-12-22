@@ -7,17 +7,9 @@ class Greeting extends React.Component {
   }
 
   render() {
-    if(this.props.isLoggedIn) {
-      return (
-        <h1>
-          Welcome back
-        </h1>
-      );
-    }
+    const isLoggedIn = this.props.isLoggedIn
     return (
-      <h1>
-        Please sign up
-      </h1>
+      <h1>{isLoggedIn ? 'Welcome Back' : 'Please Login'}</h1>
     )
   }
 }
