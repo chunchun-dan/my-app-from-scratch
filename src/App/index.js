@@ -6,6 +6,7 @@ import Toggle from './Toggle';
 import LoginControl from './LoginControl';
 import ListItems from './ListItems';
 import NameForm from './NameForm';
+import Reservation from './Reservation';
 
 class App extends React.Component {
   constructor(props) {
@@ -43,6 +44,7 @@ class App extends React.Component {
         <LoginControl />
         <ListItems numbers={this.state.numbers} addItem={this.addItem}/>
         <NameForm />
+        <Reservation />
       </div>
     )
   }
