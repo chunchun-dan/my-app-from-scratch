@@ -5,6 +5,7 @@ import LikeButton from './LikeButton';
 import Toggle from './Toggle';
 import LoginControl from './LoginControl';
 import ListItems from './ListItems';
+import NameForm from './NameForm';
 
 class App extends React.Component {
   constructor(props) {
@@ -41,6 +42,7 @@ class App extends React.Component {
         <Toggle />
         <LoginControl />
         <ListItems numbers={this.state.numbers} addItem={this.addItem}/>
+        <NameForm />
       </div>
     )
   }
