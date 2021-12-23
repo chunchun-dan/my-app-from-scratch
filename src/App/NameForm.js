@@ -3,7 +3,7 @@ import React from 'react';
 class NameForm extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {value: ''};
+    this.state = {value: 'Please type in text here'};
 
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -17,7 +17,7 @@ class NameForm extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    console.log('A new name is submitted as ' + this.state.value);
+    console.log('Some text is added as ' + this.state.value);
   }
 
   render() {
@@ -25,9 +25,7 @@ class NameForm extends React.Component {
       <form onSubmit={this.handleSubmit}>
         <label>
           {'Name: '}
-          <input
-            type="text"
-            name="nameInput"
+          <textarea
             value={this.state.value}
             onChange={this.handleChange}
           />
