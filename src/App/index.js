@@ -10,15 +10,26 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      numbers: [1, 2, 3, 4, 5],
+      numbers: [
+        {id: 1, value: 1},
+        {id: 2, value: 2},
+        {id: 3, value: 3},
+        {id: 4, value: 4},
+        {id: 5, value: 5},
+      ],
     };
     this.addItem = this.addItem.bind(this);
   }
 
   addItem() {
+    const id = new Date();
     this.setState({
-      numbers: [1, ...this.state.numbers]
+      numbers: [{
+        id: id.toLocaleTimeString(),
+        value: 0,
+      }, ...this.state.numbers]
     });
+    console.log(id);
   }
 
   render() {

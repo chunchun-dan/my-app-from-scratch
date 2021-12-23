@@ -2,10 +2,10 @@ import React from 'react';
 
 function ListItems(props) {
   let numbers = props.numbers;
-  const listItems = numbers.map((number, index) => {
+  const listItems = numbers.map((number) => {
     return(
-      <li key={index}>
-        {number}
+      <li key={number.id}>
+        {number.value}
         <input type="text"/>
       </li>
     )
