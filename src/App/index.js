@@ -8,6 +8,7 @@ import ListItems from './ListItems';
 import NameForm from './NameForm';
 import Reservation from './Reservation';
 import TemperatureCalculator from './TemperatureCalculator';
+import SignUpDialog from './SignUpDialog';
 
 class App extends React.Component {
   constructor(props) {
@@ -47,6 +48,7 @@ class App extends React.Component {
         <NameForm />
         <Reservation />
         <TemperatureCalculator />
+        <SignUpDialog />
       </div>
     )
   }
