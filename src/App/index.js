@@ -9,6 +9,7 @@ import NameForm from './NameForm';
 import Reservation from './Reservation';
 import TemperatureCalculator from './TemperatureCalculator';
 import SignUpDialog from './SignUpDialog';
+import Count from './Count';
 
 class App extends React.Component {
   constructor(props) {
@@ -49,6 +50,7 @@ class App extends React.Component {
         <Reservation />
         <TemperatureCalculator />
         <SignUpDialog />
+        <Count />
       </div>
     )
   }
